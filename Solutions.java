@@ -47,22 +47,7 @@ public class Solutions {
 
 
     public static boolean majority(boolean a, boolean b, boolean c){
-        int result = 0;
-        if(a){
-            result += 1;
-        }
-        if(b){
-            result += 1;
-        }
-        if(c){
-            result += 1;
-        }
-        if(result >= 2){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return (a && b || a && c || b & c);
     }
 
 
