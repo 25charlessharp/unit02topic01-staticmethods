@@ -1,3 +1,4 @@
+import javax.naming.ldap.ManageReferralControl;
 import javax.sql.rowset.spi.SyncResolver;
 
 public class Solutions {
@@ -12,6 +13,7 @@ public class Solutions {
             return c;
         }
     }
+
     public static double max3(double a, double b, double c) {
         if( a > b && a > c){
             return a;
@@ -24,7 +26,27 @@ public class Solutions {
         }
     }
 
+    public static boolean odd(boolean a, boolean b, boolean c) {
+        int result = 0;
+        if(a){
+            result += 1;
+        }
+        if(b){
+            result += 1;
+        }
+        if(c){
+            result += 1;
+        }
+        if(result % 2 == 1){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+
     public static void main(String[] args) {
-        System.out.println(max3(1,2,0.000001));
+        System.out.println(odd(true, true, true));
     }
 }
