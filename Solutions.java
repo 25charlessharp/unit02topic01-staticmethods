@@ -46,7 +46,17 @@ public class Solutions {
     }
 
 
+    public static boolean majority(boolean a, boolean b, boolean c){
+        
+    }
+
+
+    public static double trigIdentity(double x) {
+        return Math.sin(x) * Math.sin(x)  + Math.cos(x) * Math.cos(x);
+    }
+
+
     public static void main(String[] args) {
-        System.out.println(odd(true, true, true));
+        System.out.println(trigIdentity(5));
     }
 }
