@@ -1,6 +1,3 @@
-import javax.naming.ldap.ManageReferralControl;
-import javax.sql.rowset.spi.SyncResolver;
-
 public class Solutions {
     public static int max3(int a, int b, int c) {
         if( a > b && a > c){
@@ -60,3 +57,5 @@ public class Solutions {
         System.out.println(majority(true, true, true));
     }
 }
+
+// good
